@@ -6,6 +6,6 @@ struct TreeNodeRB {
     bool rightRed;
 
     struct TreeNodeRB* insert(TreeNodeRB* root, int key) {
-
+        
     }
 };
