@@ -18,7 +18,9 @@ struct TreeNode234 {
     int keys[3];
     struct TreeNode234* children[4];
     int numChildren;
+    TreeNode234(int);
     struct TreeNode234* insert(TreeNode234*, int);
+    struct TreeNode234* remove(int);
 };
 
 struct TreeNodeRB {
@@ -27,7 +29,16 @@ struct TreeNodeRB {
     bool leftRed;
     struct TreeNodeRB* right;
     bool rightRed;
+    TreeNodeRB(int);
     struct TreeNodeRB* insert(TreeNodeRB*, int);
+    struct TreeNodeRB* remove(int);
+};
+
+struct Graph {
+    Graph();
+    int toposort();
+    int sssp_kuskal();
+    int sssp_dijkstra();
 };
 
 class Hash {
